@@ -5,12 +5,17 @@
   background-color: var(--soft-blue);
   padding: 1rem 7rem;
   position: fixed;
+  width: 100%;
 }
 
 .title {
   font-size: 2rem;
   cursor: pointer;
   color: #fff;
+  transition: color 0.2s;
+}
+.title:hover {
+  color: var(--beige);
 }
 
 .list {
@@ -38,6 +43,10 @@
   cursor: pointer;
   color: #fff;
   font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.icon svg:hover {
+  color: var(--beige);
 }
 
 @media (max-width: 1200px) {
