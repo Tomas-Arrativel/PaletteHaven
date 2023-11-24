@@ -1,0 +1,49 @@
+.banner {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 10rem;
+  background: url('/banner/interior-painting.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text__container {
+  flex: 1;
+  color: var(--soft-blue);
+}
+
+.img__container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes palette {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.image {
+  width: 70%;
+  animation: palette 5s ease-in-out infinite;
+}
+
+.text__container {
+}

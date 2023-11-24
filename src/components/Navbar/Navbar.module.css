@@ -15,7 +15,7 @@
   transition: color 0.2s;
 }
 .title:hover {
-  color: var(--beige);
+  color: var(--light-peach);
 }
 
 .list {
@@ -36,7 +36,7 @@
 }
 
 .list__item:hover {
-  color: var(--beige);
+  color: var(--light-peach);
 }
 
 .icon svg {
@@ -46,7 +46,7 @@
   transition: color 0.2s;
 }
 .icon svg:hover {
-  color: var(--beige);
+  color: var(--light-peach);
 }
 
 @media (max-width: 1200px) {

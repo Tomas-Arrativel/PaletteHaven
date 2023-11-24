@@ -2,10 +2,11 @@
 
 :root {
   /* Colors */
-  --soft-blue: #89cff0;
-  --beige: #f5f5dc;
-  --gray: #d3d3d3;
-  --aqua-green: #7fffd4;
+  --soft-blue: #6fa6d6;
+  --light-peach: #FFDAB9;
+  --gray: #a8a8a8;
+  --mint-green: #a1d1b5;
+  --mustard-yellow: #ffdb58;
 
   /* Fonts */
   --secondary-font: 'Kanit', sans-serif;
