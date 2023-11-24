@@ -5,10 +5,12 @@
   align-items: center;
   gap: 1.5rem;
   padding: 2rem 10rem;
-  background: url('/banner/interior-painting.webp');
-  background-repeat: no-repeat;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.96)
+    ),
+    url('/banner/interior-painting.webp') no-repeat center;
   background-size: cover;
-  background-position: center;
 }
 
 .text__container {
@@ -41,9 +43,35 @@
   }
 }
 .image {
-  width: 70%;
+  width: 90%;
   animation: palette 5s ease-in-out infinite;
 }
 
-.text__container {
+.text__container h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.text__container p {
+  font-size: 1.2rem;
+  color: #454545;
+}
+
+.contact__btn {
+  background-color: var(--mustard-yellow);
+  padding: 0.5rem 1.3rem;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #454545;
+  font-weight: 900;
+  transition: all 0.2s;
+}
+.contact__btn:hover {
+  background-color: var(--yellow);
+  transform: scale(1.05);
+  color: #000;
 }

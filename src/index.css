@@ -3,10 +3,11 @@
 :root {
   /* Colors */
   --soft-blue: #6fa6d6;
-  --light-peach: #FFDAB9;
+  --light-peach: #ffdab9;
   --gray: #a8a8a8;
   --mint-green: #a1d1b5;
   --mustard-yellow: #ffdb58;
+  --yellow: #ffce1d;
 
   /* Fonts */
   --secondary-font: 'Kanit', sans-serif;

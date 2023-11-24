@@ -1,4 +1,3 @@
-import './App.css';
 import { Header, Footer } from './containers/exports';
 
 function App() {
