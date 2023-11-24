@@ -25,9 +25,15 @@ const Navbar = () => {
           className={styles.res__menu}
           style={active ? { right: 0 } : { right: '-71%' }}
         >
-          <li className={styles.list__item}>Home</li>
-          <li className={styles.list__item}>About</li>
-          <li className={styles.list__item}>Contact</li>
+          <li className={styles.list__item} onClick={onClick}>
+            Home
+          </li>
+          <li className={styles.list__item} onClick={onClick}>
+            Services
+          </li>
+          <li className={styles.list__item} onClick={onClick}>
+            Contact
+          </li>
         </ul>
       </div>
     </nav>
