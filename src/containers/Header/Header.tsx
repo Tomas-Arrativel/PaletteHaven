@@ -1,6 +1,4 @@
-import Banner from "../Banner/Banner";
-import Navbar from "../Navbar/Navbar";
-
+import { Banner, Navbar } from '../../components/exports';
 
 const Header = () => {
   return (
