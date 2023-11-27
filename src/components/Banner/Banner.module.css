@@ -1,10 +1,10 @@
 .banner {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 2rem 10rem;
+  padding: 2rem 15rem;
   background: linear-gradient(
       rgba(255, 255, 255, 0.95),
       rgba(255, 255, 255, 0.96)
@@ -29,31 +29,31 @@
     transform: translateY(0);
   }
 
-  25% {
-    transform: translateY(20px);
-  }
   50% {
-    transform: translateY(0);
+    transform: translateY(30px);
   }
-  75% {
-    transform: translateY(-20px);
-  }
+
   100% {
     transform: translateY(0);
   }
 }
 .image {
-  width: 90%;
+  width: 100%;
   animation: palette 5s ease-in-out infinite;
+  min-width: 500px;
 }
 
 .text__container h1 {
   font-size: 4rem;
   font-weight: 900;
+  transition: all 0.2s;
+}
+.text__container h1:hover {
+  transform: translateX(10px);
 }
 
 .text__container p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #454545;
 }
 
@@ -61,7 +61,6 @@
   background-color: var(--mustard-yellow);
   padding: 0.5rem 1.3rem;
   display: block;
-  margin-top: 20px;
   text-align: center;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -69,9 +68,104 @@
   color: #454545;
   font-weight: 900;
   transition: all 0.2s;
+  margin-top: 0.5rem;
 }
 .contact__btn:hover {
   background-color: var(--yellow);
-  transform: scale(1.05);
+  transform: scale(1.03);
   color: #000;
+}
+
+.benefits {
+  margin-top: 2rem;
+}
+
+.benefits h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.benefits ul {
+  margin-top: 10px;
+}
+.benefits ul li {
+  list-style: none;
+  color: #454545;
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.cta__p {
+  margin-top: 2rem;
+}
+
+.cta__p span {
+  color: var(--mint-green);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    padding: 2rem 5rem;
+  }
+
+  .image {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .img__container {
+    display: none;
+  }
+  .banner {
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    min-height: 80vh;
+  }
+
+  .text__container h1 {
+    font-size: 2.7rem;
+  }
+  .text__container p {
+    font-size: 1.15rem;
+  }
+
+  .benefits h2 {
+    font-size: 1.5rem;
+  }
+  .benefits ul li {
+    font-size: 1.07rem;
+  }
+
+  .cta__p span {
+    font-size: 1.35rem;
+  }
+
+  .contact__btn {
+    font-size: 1.13rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .banner {
+    padding-top: 6rem;
+  }
 }
