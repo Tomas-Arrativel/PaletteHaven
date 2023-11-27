@@ -2,7 +2,7 @@ import styles from './Banner.module.css';
 
 const Banner = () => {
   return (
-    <div id='banner' className={styles.banner}>
+    <div className={styles.banner}>
       <div className={styles.text__container}>
         <h1>PaletteHaven</h1>
         <p>

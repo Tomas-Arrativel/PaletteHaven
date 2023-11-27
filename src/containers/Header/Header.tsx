@@ -2,7 +2,7 @@ import { Navbar, Banner } from '../../components/exports';
 
 const Header = () => {
   return (
-    <header>
+    <header id='header'>
       <Navbar />
       <Banner />
     </header>
