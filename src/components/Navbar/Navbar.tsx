@@ -4,12 +4,23 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   const onClick = () => {
     setActive(!active);
   };
+
+  const changeOnScroll = () => {
+    window.scrollY >= 70 ? setScroll(true) : setScroll(false);
+  };
+
+  window.addEventListener('scroll', changeOnScroll);
   return (
-    <nav className={styles.navbar}>
+    <nav
+      className={
+        scroll ? `${styles.navbar} ${styles.active}` : `${styles.navbar}`
+      }
+    >
       <h2 className={styles.title}>PaletteHaven</h2>
       <ul className={styles.list}>
         <li className={styles.list__item}>Home</li>
