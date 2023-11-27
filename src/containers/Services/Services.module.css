@@ -1,7 +1,20 @@
+.container {
+  background-color: var(--gray);
+  min-height: 100vh;
+  padding: 2rem 10rem;
+}
+
+.container .title {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
 .services {
-  min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }

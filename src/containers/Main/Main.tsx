@@ -2,7 +2,7 @@ import Services from '../Services/Services';
 
 const Main = () => {
   return (
-    <div>
+    <div id='main'>
       <Services />
     </div>
   );
