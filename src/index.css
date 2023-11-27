@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;900&family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
 :root {
   /* Colors */
@@ -10,7 +10,6 @@
   --yellow: #ffce1d;
 
   /* Fonts */
-  --secondary-font: 'Kanit', sans-serif;
   --titles-font: 'Oswald', sans-serif;
 }
 
@@ -24,4 +23,23 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--titles-font);
+}
+
+.cta__btn {
+  background-color: var(--mustard-yellow);
+  padding: 0.5rem 1.3rem;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  color: #454545;
+  font-weight: 900;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+.cta__btn:hover {
+  background-color: var(--yellow);
+  color: #000;
 }
