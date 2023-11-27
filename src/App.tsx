@@ -1,9 +1,10 @@
-import { Header, Footer } from './containers/exports';
+import { Header, Footer, Main } from './containers/exports';
 
 function App() {
   return (
     <div>
       <Header />
+      <Main />
       <Footer />
     </div>
   );
