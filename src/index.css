@@ -44,6 +44,11 @@ html {
   color: #000;
 }
 
+.bold {
+  color: #272727;
+  font-weight: 700;
+}
+
 @media (max-width: 650px) {
   .cta__btn {
     padding: 0.3rem 1rem;
