@@ -38,3 +38,40 @@
   font-size: 1.15rem;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 1200px) {
+  .service {
+    width: 350px;
+  }
+}
+
+@media (max-width: 880px) {
+  .service {
+    width: 330px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service {
+    width: 100%;
+  }
+
+  .text__container .desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 465px) {
+  .text__container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .text__container .desc {
+    font-size: 0.8rem;
+  }
+  .text__container .years {
+    font-size: 0.73rem;
+  }
+}

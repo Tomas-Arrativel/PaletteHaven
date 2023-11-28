@@ -43,3 +43,16 @@ html {
   background-color: var(--yellow);
   color: #000;
 }
+
+@media (max-width: 650px) {
+  .cta__btn {
+    padding: 0.3rem 1rem;
+  }
+}
+
+@media (max-width: 483px) {
+  .cta__btn {
+    padding: 0.2rem 0.8rem;
+    font-size: 1rem;
+  }
+}
