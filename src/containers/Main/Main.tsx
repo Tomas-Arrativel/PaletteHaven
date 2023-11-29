@@ -1,4 +1,5 @@
 import { Blueprint, LikeYou, More } from '../../components/exports';
+import Questions from '../Questions/Questions';
 import Services from '../Services/Services';
 
 const Main = () => {
@@ -8,6 +9,7 @@ const Main = () => {
       <Blueprint />
       <LikeYou />
       <More />
+      <Questions />
     </div>
   );
 };
