@@ -26,6 +26,13 @@ const LikeYou = () => {
           </li>
         </ul>
       </div>
+
+      <div className={styles.arrow}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div className={styles.solution}>
         <h2 className={styles.titles}>
           Well, we have the Solution for You! 🎉
