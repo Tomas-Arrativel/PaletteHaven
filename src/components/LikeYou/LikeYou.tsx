@@ -2,7 +2,7 @@ import styles from './LikeYou.module.css';
 
 const LikeYou = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='our-solution'>
       <div className={styles.like__you}>
         <h2 className={styles.titles}>Does this sounds like you? 🤔</h2>
         <ul className={styles.list}>
