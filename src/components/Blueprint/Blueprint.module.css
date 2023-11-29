@@ -12,13 +12,13 @@
 
 .text__container .title {
   font-size: 3rem;
-  color: var(--gray);
+  color: var(--soft-blue);
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .bold {
-  color: #5c5c5c;
+  color: #2a6293;
   font-weight: 700;
 }
 
