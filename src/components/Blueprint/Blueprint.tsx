@@ -2,7 +2,7 @@ import styles from './Blueprint.module.css';
 
 const Blueprint = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='blueprint'>
       <div className={styles.text__container}>
         <h2 className={styles.title}>
           We have an unique and carefully crafted{' '}

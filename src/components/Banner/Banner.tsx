@@ -2,7 +2,7 @@ import styles from './Banner.module.css';
 
 const Banner = () => {
   return (
-    <div className={styles.banner}>
+    <section className={styles.banner} id='Home'>
       <div className={styles.text__container}>
         <h1>PaletteHaven</h1>
         <p>
@@ -39,7 +39,7 @@ const Banner = () => {
           alt='image of paint'
         />
       </div>
-    </div>
+    </section>
   );
 };
 
