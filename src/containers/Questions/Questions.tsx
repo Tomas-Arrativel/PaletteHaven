@@ -11,7 +11,7 @@ const Questions = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='questions'>
       <h2 className={styles.qTitle}>Questions that may arise:</h2>
       <Question
         question='What is your pricing structure?'
