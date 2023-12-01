@@ -63,5 +63,9 @@
 }
 
 .error {
-  color: #aa1818;
+  color: #a60000;
+}
+
+.inputError::placeholder {
+  color: #a60000;
 }

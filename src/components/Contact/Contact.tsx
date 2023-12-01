@@ -1,7 +1,10 @@
 import { useForm } from 'react-hook-form';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 
 const Contact = () => {
+  const form: any = useRef();
   const {
     register,
     formState: { errors },
@@ -11,8 +14,22 @@ const Contact = () => {
 
   const onSubmit = (data: any) => {
     if (data) {
-      console.log(data);
-      reset();
+      emailjs
+        .sendForm(
+          process.env.EMAIL_SERVICE_ID as string,
+          process.env.EMAIL_TEMPLATE_ID as string,
+          form.current,
+          process.env.PUBLIC_KEY as string,
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            reset();
+          },
+          (error) => {
+            console.log(error.text);
+          },
+        );
     }
   };
 
@@ -20,10 +37,17 @@ const Contact = () => {
     <section className={styles.contact} id='contact'>
       <h2>Get in touch with us</h2>
       <div className={styles.container}>
-        <form className={styles.contactForm} onSubmit={handleSubmit(onSubmit)}>
+        <form
+          ref={form}
+          className={styles.contactForm}
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className={styles.inputContainer}>
             <label>First name</label>
             <input
+              className={`${
+                errors.message?.type === 'required' && styles.inputError
+              }`}
               type='text'
               placeholder='First name'
               {...register('firstName', { required: true, maxLength: 40 })}
@@ -40,6 +64,9 @@ const Contact = () => {
           <div className={styles.inputContainer}>
             <label>Last name</label>
             <input
+              className={`${
+                errors.message?.type === 'required' && styles.inputError
+              }`}
               type='text'
               placeholder='Last name'
               {...register('lastName', { required: true, maxLength: 35 })}
@@ -56,6 +83,9 @@ const Contact = () => {
           <div className={styles.inputContainer}>
             <label>E-mail</label>
             <input
+              className={`${
+                errors.message?.type === 'required' && styles.inputError
+              }`}
               type='text'
               placeholder='E-mail'
               {...register('email', {
@@ -87,6 +117,9 @@ const Contact = () => {
           <div className={styles.inputContainer}>
             <label>Message</label>
             <textarea
+              className={`${
+                errors.message?.type === 'required' && styles.inputError
+              }`}
               placeholder='Write your message here'
               {...register('message', { required: true, maxLength: 3000 })}
             ></textarea>
