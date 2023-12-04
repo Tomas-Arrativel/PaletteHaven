@@ -2,7 +2,7 @@ import styles from './Banner.module.css';
 
 const Banner = () => {
   return (
-    <section className={styles.banner} id='Home'>
+    <section className={styles.banner} id='home'>
       <div className={styles.text__container}>
         <h1>PaletteHeaven</h1>
         <p>

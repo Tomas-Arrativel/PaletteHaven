@@ -2,7 +2,7 @@ import styles from './More.module.css';
 
 const More = () => {
   return (
-    <section className={styles.container} id='the-best'>
+    <section className={styles.container}>
       <div className={styles.text__container}>
         <h2>But wait, there's more!</h2>
         <h3>

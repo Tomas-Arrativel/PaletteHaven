@@ -32,6 +32,11 @@
   display: none;
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
 .list__item {
   list-style: none;
   font-weight: 700;

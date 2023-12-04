@@ -49,7 +49,7 @@ const LikeYou = () => {
             ✨ We deliver work of <span className='bold'>exceptional.</span>{' '}
             quality.
           </li>
-          <li className={styles.list__item}>
+          <li className={styles.list__item} id='the-best'>
             ✨ We offer the most <span className='bold'>competitive rates</span>{' '}
             within our expertise.
           </li>

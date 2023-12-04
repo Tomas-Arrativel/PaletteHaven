@@ -23,9 +23,18 @@ const Navbar = () => {
     >
       <h2 className={styles.title}>PaletteHeaven</h2>
       <ul className={styles.list}>
-        <li className={styles.list__item}>Home</li>
-        <li className={styles.list__item}>About</li>
-        <li className={styles.list__item}>Contact</li>
+        <a href='#home'>
+          <li className={styles.list__item}>Home</li>
+        </a>
+        <a href='#services'>
+          <li className={styles.list__item}>Services</li>
+        </a>
+        <a href='#blueprint'>
+          <li className={styles.list__item}>Blueprint</li>
+        </a>
+        <a href='#contact'>
+          <li className={styles.list__item}>Contact</li>
+        </a>
       </ul>
 
       <div className={styles.res__list}>
@@ -36,15 +45,36 @@ const Navbar = () => {
           className={styles.res__menu}
           style={active ? { right: 0 } : { right: '-71%' }}
         >
-          <li className={styles.list__item} onClick={onClick}>
-            Home
-          </li>
-          <li className={styles.list__item} onClick={onClick}>
-            Services
-          </li>
-          <li className={styles.list__item} onClick={onClick}>
-            Contact
-          </li>
+          <a href='#home'>
+            <li className={styles.list__item} onClick={onClick}>
+              Home
+            </li>
+          </a>
+          <a href='#services'>
+            <li className={styles.list__item} onClick={onClick}>
+              Services
+            </li>
+          </a>
+          <a href='#blueprint'>
+            <li className={styles.list__item} onClick={onClick}>
+              Blueprint
+            </li>
+          </a>
+          <a href='#the-best'>
+            <li className={styles.list__item} onClick={onClick}>
+              Guarantee
+            </li>
+          </a>
+          <a href='#questions'>
+            <li className={styles.list__item} onClick={onClick}>
+              Questions
+            </li>
+          </a>
+          <a href='#contact'>
+            <li className={styles.list__item} onClick={onClick}>
+              Contact
+            </li>
+          </a>
         </ul>
       </div>
     </nav>
