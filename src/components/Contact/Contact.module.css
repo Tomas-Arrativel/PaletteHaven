@@ -147,6 +147,9 @@
   .contact h2 {
     font-size: 2rem;
   }
+  .error {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 620px) {
@@ -180,6 +183,10 @@
   }
   .social p {
     font-size: 1rem;
+  }
+
+  .error {
+    font-size: 0.9rem;
   }
 }
 
