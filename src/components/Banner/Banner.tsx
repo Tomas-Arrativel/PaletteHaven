@@ -4,9 +4,9 @@ const Banner = () => {
   return (
     <section className={styles.banner} id='Home'>
       <div className={styles.text__container}>
-        <h1>PaletteHaven</h1>
+        <h1>PaletteHeaven</h1>
         <p>
-          Elevate your online presence with PaletteHaven – where website
+          Elevate your online presence with PaletteHeaven – where website
           solutions meet artistic precision.
         </p>
         <div className={styles.benefits}>

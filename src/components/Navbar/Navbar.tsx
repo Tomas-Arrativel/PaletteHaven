@@ -21,7 +21,7 @@ const Navbar = () => {
         scroll ? `${styles.navbar} ${styles.active}` : `${styles.navbar}`
       }
     >
-      <h2 className={styles.title}>PaletteHaven</h2>
+      <h2 className={styles.title}>PaletteHeaven</h2>
       <ul className={styles.list}>
         <li className={styles.list__item}>Home</li>
         <li className={styles.list__item}>About</li>
