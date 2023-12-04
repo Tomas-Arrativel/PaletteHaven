@@ -16,10 +16,10 @@ const Contact = () => {
     if (data) {
       emailjs
         .sendForm(
-          process.env.EMAIL_SERVICE_ID as string,
-          process.env.EMAIL_TEMPLATE_ID as string,
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
           form.current,
-          process.env.PUBLIC_KEY as string,
+          import.meta.env.VITE_PUBLIC_KEY,
         )
         .then(
           (result) => {
