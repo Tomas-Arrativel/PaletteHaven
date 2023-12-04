@@ -1,6 +1,10 @@
 import { useForm } from 'react-hook-form';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import styles from './Contact.module.css';
 
 const Contact = () => {
@@ -24,13 +28,41 @@ const Contact = () => {
         .then(
           (result) => {
             console.log(result.text);
+            notify();
             reset();
           },
           (error) => {
             console.log(error.text);
+            notifyError();
           },
         );
     }
+  };
+
+  const notify = () => {
+    toast.success('Message sent!', {
+      position: 'top-center',
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
+  };
+
+  const notifyError = () => {
+    toast.error('There was an error!', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
   };
 
   return (
@@ -137,6 +169,7 @@ const Contact = () => {
             value='Send'
             className={`cta__btn ${styles.btn}`}
           />
+          <ToastContainer />
         </form>
         <div className={styles.socials}>
           <div className={styles.social}>
