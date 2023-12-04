@@ -5,7 +5,7 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 interface QuestionProps {
   question: string;
   content: string;
-  open: boolean | null;
+  open: any;
   toggle: any;
 }
 
