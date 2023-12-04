@@ -51,6 +51,8 @@
 
 .socials {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn {
@@ -68,4 +70,121 @@
 
 .inputError::placeholder {
   color: #a60000;
+}
+
+/* Social part */
+.social {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 4px #ddd;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.social:hover {
+  box-shadow: 0 5px 10px #f2f2f2;
+  transform: scale(1.02);
+}
+
+.social img {
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.social p {
+  font-size: 1.2rem;
+}
+
+.social p span {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.social:last-child img {
+  border-radius: 14px;
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .socials {
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .social {
+    flex: 1;
+  }
+  .social p span {
+    margin: 0;
+  }
+}
+
+@media (max-width: 730px) {
+  .social img {
+    margin-right: 0.5rem;
+  }
+  .social p {
+    font-size: 1rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .socials {
+    flex-direction: column;
+  }
+  .social {
+    width: 100%;
+  }
+
+  .social img {
+    width: 2.4rem;
+  }
+  .social:last-child img {
+    border-radius: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .inputContainer input,
+  .inputContainer textarea {
+    font-size: 0.9rem;
+  }
+
+  .inputContainer label {
+    font-size: 1rem;
+  }
+  .social p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
 }

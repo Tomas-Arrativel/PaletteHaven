@@ -140,14 +140,16 @@ const Contact = () => {
         </form>
         <div className={styles.socials}>
           <div className={styles.social}>
-            <img src='' alt='instagram icon' />
-            <p>instagram:</p>
-            <p>PaletteHeaven</p>
+            <img src='./contact/instagram-icon.png' alt='instagram icon' />
+            <p>
+              Instagram: <span>PaletteHeaven</span>
+            </p>
           </div>
           <div className={styles.social}>
-            <img src='' alt='instagram icon' />
-            <p>instagram:</p>
-            <p>PaletteHeaven</p>
+            <img src='./contact/facebook-icon.png' alt='Facebook icon' />
+            <p>
+              Facebook: <span>PaletteHeaven</span>
+            </p>
           </div>
         </div>
       </div>
